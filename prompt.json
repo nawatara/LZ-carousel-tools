@@ -177,6 +177,49 @@
       "disclaimer": "*Waktu build dapat bervariasi tergantung project."
     }
   ],
+  "generation_contract": {
+    "input_mode": "one_paste_brief",
+    "maximum_slides": 5,
+    "required_slide_marker": "SLIDE 1 - TITLE",
+    "field_markers": [
+      "Visual Utama:",
+      "Headline:",
+      "Small Text:",
+      "Subtext:",
+      "Bottom Text:",
+      "CTA:"
+    ],
+    "field_parsing_rule": "Only parse labels at the beginning of a line followed by a colon. Never match labels inside ordinary words.",
+    "output": {
+      "canvas_width": 1080,
+      "canvas_height": 1350,
+      "aspect_ratio": "4:5",
+      "color_space": "sRGB",
+      "formats": ["PNG", "PDF"],
+      "png_filename_pattern": "LZTools_Carousel_[Campaign]_S01_v01.png",
+      "pdf_filename_pattern": "LZTools_Carousel_[Campaign]_MASTER.pdf"
+    },
+    "layout_safety": {
+      "safe_margin_px": {"top": 80, "right": 80, "bottom": 70, "left": 80},
+      "headline_max_lines": 5,
+      "headline_max_width_px": 920,
+      "headline_baseline_start_px": 260,
+      "headline_line_gap_px": 78,
+      "supporting_max_lines": 3,
+      "footer_max_lines": 3,
+      "ui_card_max_lines": 8,
+      "wrap_by_pixel_width": true,
+      "never_allow_text_overlap": true,
+      "never_clip_important_text": true
+    },
+    "content_safety": [
+      "Do not render a CTA when the CTA field is absent.",
+      "Do not put CTA, footer, or disclaimer inside the technical UI card.",
+      "If copy exceeds the layout budget, shorten or summarize it before rendering.",
+      "Do not reduce headline text until it becomes difficult to read on mobile.",
+      "Do not position the headline on top of the eyebrow or section label."
+    ]
+  },
   "master_prompt": {
     "instruction": "Create a 4:5 Instagram carousel slide for LZ Tools using the master visual system below. The slide must look like a premium dark developer interface rather than a conventional advertisement.",
     "required_visuals": [

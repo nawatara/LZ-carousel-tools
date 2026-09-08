@@ -706,3 +706,95 @@ atau format source design yang digunakan tim.
 > Mulai dari **“Apa hal menyebalkan yang developer alami sebelum membutuhkan LZ Tools?”**
 
 Jika slide 1–3 tetap menarik walaupun logo LZ Tools dihapus, berarti konten TOFU-nya bekerja.
+
+---
+
+# 15. Generator-Ready Layout Contract
+
+Bagian ini menjadi aturan teknis wajib untuk semua carousel yang dibuat melalui LZ Carousel Tools. Tujuannya adalah memastikan preview, PNG, dan PDF mempunyai komposisi yang sama dan tidak menghasilkan teks bertumpuk.
+
+## Output Contract
+
+- Setiap slide wajib berukuran `1080 × 1350 px`.
+- Rasio wajib `4:5`.
+- PNG menggunakan RGB / sRGB.
+- PDF memakai satu halaman untuk setiap slide dengan ukuran halaman `1080 × 1350`.
+- Preview, PNG, dan PDF harus dirender dari data slide dan renderer yang sama.
+- Nama file menggunakan pola `LZTools_Carousel_[Campaign]_S01_v01.png`.
+- PDF master menggunakan pola `LZTools_Carousel_[Campaign]_MASTER.pdf`.
+
+## Safe Area Wajib
+
+Gunakan batas aman berikut pada kanvas 1080 × 1350:
+
+- Kiri: minimum `80 px`.
+- Kanan: minimum `80 px`.
+- Atas: minimum `80 px`.
+- Bawah: minimum `70 px`.
+- Headline tidak boleh menyentuh section label.
+- Supporting copy tidak boleh menyentuh headline atau main UI card.
+- Footer tidak boleh masuk ke area main UI atau CTA.
+
+## Typography Collision Rules
+
+- Headline maksimum `5 baris`.
+- Headline wajib di-wrap berdasarkan lebar pixel, bukan hanya jumlah karakter.
+- Lebar maksimum headline: `920 px`.
+- Ukuran headline default: `70–74 px` pada canvas 1080 × 1350.
+- Baseline headline pertama dimulai minimum `260 px` dari atas agar tidak bertumpuk dengan eyebrow.
+- Jarak antar-baseline headline: sekitar `78 px`.
+- Supporting copy maksimum `3 baris` di luar card.
+- Ukuran supporting copy default: `21–22 px`.
+- Footer maksimum `2–3 baris` dengan ukuran `16 px` monospace.
+- Jika headline terlalu panjang, pecah menjadi lebih banyak baris atau ringkas copy. Jangan mengecilkan teks sampai sulit dibaca.
+- Jangan memakai forced line break yang membuat satu baris melebihi lebar canvas.
+
+## Main UI Card Rules
+
+- Card menggunakan area horizontal `x=80` sampai `x=1000`.
+- Isi card maksimum `8 baris` pada renderer standar.
+- Card title memakai satu baris pendek.
+- Technical copy menggunakan monospace dan wajib di-wrap.
+- Jika isi visual lebih panjang dari kapasitas card, prioritaskan informasi inti dan ringkas sisanya.
+- Jangan menaruh CTA, footer, atau disclaimer di dalam card yang sama dengan isi teknis.
+- CTA hanya dibuat jika field `CTA:` memang tersedia pada draft.
+
+## One-Paste Draft Contract
+
+Generator menerima satu draft teks dengan maksimal lima blok slide. Setiap blok sebaiknya memakai marker berikut:
+
+```text
+SLIDE 1 - HOOK
+[ SECTION LABEL ]
+
+Visual Utama:
+Deskripsi visual atau isi UI.
+
+Headline:
+Headline utama.
+
+Small Text:
+Copy pendukung.
+
+Subtext:
+Alternatif copy pendukung.
+
+Bottom Text:
+Insight footer.
+
+CTA:
+Call to action opsional.
+```
+
+Parser hanya membaca label jika label tersebut berada di awal baris dan diikuti titik dua. Ini mencegah kata seperti `EXPECTATION` terbaca sebagai field `CTA`.
+
+## Preflight Sebelum Export
+
+- [ ] Semua headline berada di dalam lebar 920 px.
+- [ ] Tidak ada teks yang overlap dengan eyebrow.
+- [ ] Tidak ada teks yang keluar dari card.
+- [ ] CTA hanya tampil jika tersedia di draft.
+- [ ] Footer tetap berada di bawah main UI.
+- [ ] Semua slide terbaca pada preview 4:5.
+- [ ] PNG dan PDF menggunakan layout yang sama dengan preview.
+- [ ] Tidak ada teks penting yang hanya terlihat pada zoom desktop.
