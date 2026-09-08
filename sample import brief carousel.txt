@@ -1,0 +1,125 @@
+DRAFT 3 (TOFU / MOFU — FREELANCER & AGENCY DEADLINE)
+Campaign: “Klien: 'Mas, Bikin Demo APK-nya 1 Jam Saja Kan?'”
+Fokus: Tekanan deadline delivery klien, ekspektasi klien vs hambatan teknis packaging.
+ 
+---
+ 
+SLIDE 1 — HOOK
+[ CLIENT EXPECTATION // 01 / 05 ]
+ 
+Visual Utama: Chat bubble WhatsApp / Telegram bergaya dark:
+CLIENT [13:15]:
+"Mas, web dashboard-nya keren! Bisa sekalian dibikinin APK Android-nya ya?
+Mau saya bawa meeting jam 14:00."
+ 
+DEV [13:16]:
+"Bisa pak, tapi..."
+ 
+DEV'S BRAIN:
+"Buka Android Studio, gradle sync, cari keystore, signing... 45 menit belum tentu lolos."
+ 
+Headline:
+> EKSPEKTASI KLIEN: 5 MENIT.
+> REALITA BUILD: 2 JAM KERINGAT DINGIN.
+ 
+Small Text:
+> Klien mengira bikin APK dari web tinggal 'Save As .apk'.
+ 
+Bottom Text:
+DILEMA KLASIK FREELANCER & WEB AGENCY SAAT DELIVERY PROJECT.
+ 
+---
+ 
+SLIDE 2 — DEEP PAIN
+[ UNEXPECTED BOTTLENECK // 02 / 05 ]
+ 
+Visual Utama: Card build log error saat diburu waktu:
+> ./gradlew assembleDebug
+ 
+FAILURE: Build completed with 2 failures.
+1: Task failed with an exception:
+Execution failed for task ':app:processReleaseManifest'.
+> Manifest merger failed : apps targeting Android 14+
+must specify exported status.
+ 
+Waktu tersisa sebelum meeting: 18 Menit.
+ 
+Headline:
+> SAAT DIKEJAR DEADLINE,
+> DI SITU GRADLE SUKA BERTINGKAH.
+ 
+Subtext:
+> Web-nya sudah 100% responsif dan siap jalan.
+> Tapi Anda tertahan 40 menit cuma karena konfigurasi manifest dan build tools versi lawas.
+ 
+Bottom Text:
+KEHILANGAN TRUST KLIEN HANYA KARENA MASALAH PACKAGING BUKAN HAL YANG KEREN.
+ 
+---
+ 
+SLIDE 3 — REALISASI
+[ EFFICIENCY MATTERS // 03 / 05 ]
+ 
+Visual Utama: Checklist kontras:
+FOKUS SEBENARNYA:
+✓ Selesaikan fitur klien
+✓ Pastikan UI mobile rapi
+✓ Presentasi lancar
+ 
+YANG MENGHABISKAN WAKTU:
+✕ Nyari error dependensi
+✕ Download build-tools yang hilang
+✕ Kompilasi lokal yang lama
+ 
+Headline:
+> WAKTU ANDA LEBIH MAHAL
+> DARI SEKADAR DEBUGGING GRADLE.
+ 
+Subtext:
+> Klien membayar untuk hasil produk yang bisa dipakai, bukan untuk melihat Anda pusing mengatur SDK level.
+ 
+Bottom Text:
+UNTUK WRAPPER SEDERHANA, AUTOMATION ADALAH JALUR TERBAIK.
+ 
+---
+ 
+SLIDE 4 — PRODUCT REVEAL & SOLUSI
+[ INSTANT DELIVERY // 04 / 05 ]
+ 
+Visual Utama: Mockup chat Telegram Bot interaktif:
+[ You ]: /url
+[ Bot ]: Masukkan link website Anda:
+[ You ]: https://klien-dashboard.com
+[ Bot ]: Memproses build APK...
+[████████████████] 100%
+[ Bot ]: Selesai! File APK siap diunduh (12 MB).
+ 
+Headline:
+> KIRIM LINK. TUNGGU SEBENTAR.
+> APK SIAP DIKIRIM KE KLIEN.
+ 
+Subtext:
+> LZ Tools
+> Build APK siap pakai langsung dari URL website dalam hitungan menit via Telegram Bot. Lengkap dengan icon, splash, dan izin akses.
+ 
+Badge:
+> SOLUSI CEPAT UNTUK DEMO & PRODUCTION
+ 
+---
+ 
+SLIDE 5 — CTA
+[ SHARP DELIVERY // 05 / 05 ]
+ 
+Visual Utama: Card statement santai:
+CLIENT:
+"Mas, bisa minta APK-nya sekarang?"
+ 
+YOU:
+"Sudah saya kirim di chat, silakan install."
+ 
+Headline:
+> JADILAH DEVELOPER
+> DENGAN TURNAROUND TIME PALING CEPAT.
+ 
+CTA:
+HEMAT WAKTU DELIVERY ANDA DENGAN LZ TOOLS →
