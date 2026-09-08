@@ -1,0 +1,211 @@
+{
+  "template_name": "LZ Tools Developer Carousel Master Template",
+  "version": "1.0",
+  "use_case": "Instagram carousel 4:5, TOFU to soft marketing, developer-focused",
+  "brand": {
+    "name": "LZ Tools",
+    "product": "Telegram Bot APK Builder",
+    "core_value_proposition": "Convert website/web app to Android APK in under 5 minutes for suitable projects, directly through Telegram.",
+    "positioning": [
+      "Do not position LZ Tools as a replacement for native Android development.",
+      "Position it as a faster path for Web-to-APK packaging when the web app is already ready.",
+      "Emphasize reduced setup, less repetitive configuration, and faster shipping."
+    ],
+    "taglines": [
+      "LESS SETUP. MORE SHIPPING.",
+      "WEB → APK",
+      "Coding-nya sudah selesai. Jangan biarkan packaging-nya yang makan waktu."
+    ]
+  },
+  "format": {
+    "aspect_ratio": "4:5",
+    "recommended_resolution": "2160x2700 px",
+    "safe_margin": "6-8% from all edges",
+    "slide_count": {
+      "preferred": 5,
+      "maximum": 5
+    }
+  },
+  "visual_direction": {
+    "style_keywords": [
+      "dark developer aesthetic",
+      "minimalist",
+      "premium tech UI",
+      "terminal-inspired",
+      "code editor",
+      "charcoal grey cards",
+      "clean hierarchy",
+      "subtle futuristic"
+    ],
+    "background": {
+      "type": "near-black / deep charcoal",
+      "primary_hex": "#080A0B",
+      "notes": "Avoid pure flat black when possible; use very subtle vignette or tonal depth."
+    },
+    "cards": {
+      "primary_hex": "#25282B",
+      "secondary_hex": "#303438",
+      "border": "1px subtle cool-grey / blue-grey",
+      "radius": "medium to large rounded corners",
+      "shadow": "soft, low-opacity, never glossy"
+    },
+    "text_colors": {
+      "primary": "#F1F1F1",
+      "secondary": "#92989D",
+      "accent_blue": "#AFC8F5",
+      "success_green": "#42D985",
+      "warning_yellow": "#E4B94F",
+      "error_red": "#FF5B5B"
+    },
+    "typography": {
+      "headline": {
+        "style": "bold geometric sans-serif",
+        "examples": [
+          "Inter Black",
+          "Manrope ExtraBold",
+          "SF Pro Display Heavy"
+        ],
+        "case": "UPPERCASE preferred",
+        "max_words": "5-9 words",
+        "line_height": "tight"
+      },
+      "body": {
+        "style": "clean sans-serif or monospace depending context",
+        "examples": [
+          "Inter",
+          "Manrope",
+          "SF Pro"
+        ]
+      },
+      "code": {
+        "style": "monospace",
+        "examples": [
+          "JetBrains Mono",
+          "IBM Plex Mono",
+          "Space Mono"
+        ],
+        "usage": "terminal, JSON, build log, labels, small technical notes"
+      }
+    },
+    "ui_elements": [
+      "terminal/code editor window",
+      "JSON/code snippets",
+      "chat/message cards",
+      "build status",
+      "progress indicators",
+      "developer checklist",
+      "small technical labels",
+      "slide counter 01/05 to 05/05",
+      "minimal directional arrow"
+    ],
+    "avoid": [
+      "3D cartoon/chibi",
+      "neon overload",
+      "busy gradients",
+      "too many icons",
+      "stock imagery",
+      "generic SaaS dashboard look",
+      "large logos on early slides",
+      "hard-selling visuals before slide 4"
+    ]
+  },
+  "content_strategy": {
+    "funnel": "TOFU → insight → soft solution reveal → CTA",
+    "tone": [
+      "developer-to-developer",
+      "technically credible",
+      "concise",
+      "relatable",
+      "non-hype",
+      "slightly witty"
+    ],
+    "rules": [
+      "Start from a real developer pain point, not from product features.",
+      "Do not mention LZ Tools prominently before slide 4.",
+      "Use concrete Android build friction such as Gradle, SDK, dependency, manifest, keystore, permissions, testing, rebuild.",
+      "Avoid implying all Android development can be replaced by a web wrapper.",
+      "Prefer 'for suitable Web-to-APK use cases' framing.",
+      "Keep one dominant message per slide.",
+      "Use product proof or real Telegram UI on slide 4 or 5."
+    ]
+  },
+  "slide_framework": [
+    {
+      "slide": 1,
+      "role": "HOOK",
+      "goal": "Stop the scroll with a familiar Android developer situation.",
+      "content_formula": "Completed dev work + unresolved APK packaging pain.",
+      "recommended_headline": "CODING SELESAI. APK-NYA BELUM JADI.",
+      "visual": "Large headline + grey JSON/code card showing UI/backend/API/database done, APK build pending.",
+      "product_visibility": "None or near-zero"
+    },
+    {
+      "slide": 2,
+      "role": "DEEP PAIN",
+      "goal": "Make the audience feel the toolchain friction.",
+      "content_formula": "Small output, disproportionately long build/toolchain process.",
+      "recommended_headline": "1 APK KECIL, KENAPA TOOLCHAIN-NYA PANJANG?",
+      "visual": "BUILD FAILED terminal with Gradle, SDK, dependency, manifest, signing, WebView/permission issues.",
+      "product_visibility": "None"
+    },
+    {
+      "slide": 3,
+      "role": "REFRAME",
+      "goal": "Show that some Web-to-APK jobs are simple in intent but heavy in setup.",
+      "content_formula": "Client asks for APK from ready web app; developer sees long setup checklist.",
+      "recommended_headline": "CUMA MAU BIKIN APK DARI WEB.",
+      "visual": "Client/dev chat + Android Studio/Gradle/SDK/Manifest/Keystore/Build/Test/Fix/Rebuild checklist.",
+      "product_visibility": "None"
+    },
+    {
+      "slide": 4,
+      "role": "SOLUTION REVEAL",
+      "goal": "Introduce a real workflow and prove simplicity.",
+      "content_formula": "Ready web + Telegram bot + selectable permissions/features + build.",
+      "recommended_headline": "KALAU WEB-NYA SUDAH SIAP, KENAPA HARUS MULAI DARI NOL?",
+      "visual": "Use real or realistic Telegram bot UI, ideally based on an actual LZ Tools flow.",
+      "product_visibility": "Visible but not aggressively promotional"
+    },
+    {
+      "slide": 5,
+      "role": "CTA / PAYOFF",
+      "goal": "Show the result and invite trial.",
+      "content_formula": "Web URL → bot → APK ready → download.",
+      "recommended_headline": "WEB → APK KURANG DARI 5 MENIT*",
+      "visual": "Telegram bot on phone + APK READY result card + CTA button.",
+      "product_visibility": "High",
+      "disclaimer": "*Waktu build dapat bervariasi tergantung project."
+    }
+  ],
+  "master_prompt": {
+    "instruction": "Create a 4:5 Instagram carousel slide for LZ Tools using the master visual system below. The slide must look like a premium dark developer interface rather than a conventional advertisement.",
+    "required_visuals": [
+      "Near-black charcoal background",
+      "Medium-large charcoal grey floating cards",
+      "Clean cool-grey borders",
+      "Bold white or pale-blue headline",
+      "Monospace technical copy",
+      "Minimal UI details",
+      "High legibility on mobile"
+    ],
+    "layout_rules": [
+      "Keep the main headline in the upper third.",
+      "Keep the main UI/code card in the middle 45-55% of the canvas.",
+      "Use the bottom area for a short insight, CTA, or navigation arrow.",
+      "Slide counter must sit in the upper-right corner.",
+      "Do not let text touch the edges.",
+      "Avoid excessive microcopy."
+    ],
+    "dynamic_fields": {
+      "slide_number": "{{01-05}}",
+      "section_label": "{{ANDROID DEVELOPER / LZ TOOLS / WEB TO APK}}",
+      "headline": "{{HEADLINE}}",
+      "supporting_copy": "{{SUPPORTING_COPY}}",
+      "main_ui_type": "{{JSON | TERMINAL | CHAT | CHECKLIST | TELEGRAM | APK_RESULT}}",
+      "main_ui_content": "{{UI_CONTENT}}",
+      "footer_message": "{{FOOTER_MESSAGE}}",
+      "cta": "{{CTA_OR_EMPTY}}"
+    },
+    "image_generation_prompt": "Design a premium 4:5 developer carousel poster for LZ Tools. Use a near-black charcoal background, muted grey floating cards, thin blue-grey borders, crisp white and pale-blue typography, monospace technical details, and a minimalist terminal/code-editor aesthetic. Preserve generous negative space and mobile readability. Headline: '{{HEADLINE}}'. Supporting copy: '{{SUPPORTING_COPY}}'. Main content should visually represent '{{MAIN_UI_TYPE}}' with: '{{UI_CONTENT}}'. Add '{{SECTION_LABEL}}' in small monospace text at top-left and '{{SLIDE_NUMBER}} / 05' at top-right. Footer message: '{{FOOTER_MESSAGE}}'. CTA: '{{CTA_OR_EMPTY}}'. The design should feel made by developers for developers: technically credible, understated, premium, and not like a generic SaaS ad. Use only a few functional accent colors: pale blue for emphasis, green for success, red only for errors, yellow only for warnings. Do not use chibi, 3D characters, stock photography, bright gradients, excessive glow, or visual clutter."
+  }
+}

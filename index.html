@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080a0b" />
+    <title>LZ Tools AI Carousel Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="#"><span class="brand-mark">lz</span><span>LZ TOOLS <b>/</b> AI CAROUSEL GENERATOR</span></a>
+      <span class="status"><i></i> READY TO GENERATE</span>
+    </header>
+    <main class="app-shell">
+      <section class="hero-copy"><span class="eyebrow">ONE PASTE WORKFLOW</span><h1>Paste your draft.<br /><em>Ship your carousel.</em></h1><p>Masukkan seluruh brief carousel satu kali. LZ Tools akan membaca struktur slide, menyusun visual, lalu menyiapkan file PNG dan PDF dengan design system yang konsisten.</p></section>
+      <section class="generator-layout">
+        <div class="input-card">
+          <div class="card-head"><div><span class="eyebrow">01 / INPUT</span><h2>Paste draft Anda</h2></div><span class="format-chip">AUTO PARSER</span></div>
+          <textarea id="draft-input" spellcheck="false" placeholder="Paste brief carousel Anda di sini...&#10;&#10;Gunakan marker seperti:&#10;SLIDE 1 — HOOK&#10;Headline:&#10;Visual Utama:&#10;Subtext:&#10;Bottom Text:&#10;&#10;SLIDE 2 — ..."></textarea>
+          <div class="input-foot"><span>Format bebas. Marker slide akan dibaca otomatis.</span><span id="word-count">0 words</span></div>
+          <button class="generate-button" id="generate-button" type="button"><span class="spark">✦</span> GENERATE CAROUSEL <b>→</b></button>
+          <button class="example-button" id="example-button" type="button">LOAD EXAMPLE BRIEF</button>
+        </div>
+        <div class="result-card">
+          <div class="card-head"><div><span class="eyebrow">02 / OUTPUT</span><h2>Ready to publish</h2></div><span class="output-state" id="output-state">WAITING FOR DRAFT</span></div>
+          <div class="result-empty" id="result-empty"><div class="empty-icon">↳</div><strong>Preview akan muncul di sini</strong><span>Paste draft di sebelah kiri,<br />lalu generate dalam satu klik.</span></div>
+          <div class="result-content" id="result-content" hidden>
+            <div class="preview-wrap"><canvas id="preview-canvas" width="1080" height="1350"></canvas><span class="safe-label">1080 × 1350 / 4:5</span></div>
+            <div class="result-controls"><button id="prev-button" type="button">←</button><div id="dots"></div><span id="slide-number">01 / 05</span><button id="next-button" type="button">→</button></div>
+            <div class="download-row"><button class="secondary-button" id="png-button" type="button">↓ DOWNLOAD 5 PNG</button><button class="primary-button" id="pdf-button" type="button">GENERATE PDF <span>↗</span></button></div>
+          </div>
+        </div>
+      </section>
+      <div class="info-strip"><span><i>✓</i> Single source of truth</span><span><i>✓</i> Instagram-ready 4:5</span><span><i>✓</i> PNG + PDF export</span><span><i>✓</i> No design setup</span></div>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
